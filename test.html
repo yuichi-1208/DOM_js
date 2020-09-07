@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DOM操作入門</title>
+  </head>
+  <body>
+    <h1 id="select">DOM操作入門</h1>
+    <h1>DOM操作入門</h1>
+    <h1>要素の取得</h1>
+
+    <ul>
+      <li>DOM1</li>
+      <li>DOM2</li>
+      <li>DOM3</li>
+    </ul>
+
+    <ul style="list-style-type: none">
+      <li class="list">DIVE</li>
+      <li class="list">INTO</li>
+      <li class="list">CODE</li>
+    </ul>
+    <ul style="list-style-type: none">
+      <li class="list2">DIVER</li>
+      <li class="list2">STUDY</li>
+    </ul>
+    <input type="button" value="表示" onclick="classview()">
+    <input type="button" value="非表示" onclick="classhide()">
+
+    <input type="buttn" value="Click" onclick="namechange()">
+    <!-- <script src="test.js"></script> -->
+    <script>
+      // console.log("Hello JavaScript");
+      // const target = document.getElementById("select");
+      // console.log(target);
+
+      // const namechange = function(){
+      //   const myp = document.getElementById("select");
+      //   myp.innerHTML = "ノード入門";
+      // }
+
+      // const target = document.getElementsByTagName('h1');
+      // // console.log(target);
+      // console.log(target[1]);
+      //
+      // let namechange = function(){
+      //   let li01 = document.getElementsByTagName('li');
+      //   for (let i = 0; i < li01.length; i++){
+      //     li01[i].innerHTML = "liのテキストを変更したよ";
+      //   }
+      // };
+
+      // const lists = document.getElementsByClassName('list');
+      // // 要素の取得
+      // console.log(lists);
+      // console.log(lists[0]);
+      // // テキストデータの取得
+      // console.log(lists[0].textContent);
+      //
+      // for(i=0; i<lists.length; i++){
+      //   console.log(lists[i]);
+      // }
+      //
+      // for(i=0; i<lists.length; i++){
+      //   console.log(lists[i].textContent);
+      // }
+
+    //   const classview = function(){
+    //   const lists = document.getElementsByClassName('list');
+    //   for (let i = 0; i < lists.length; i++) {
+    //     // 定数listsの中には、配列が入っている
+    //     lists[i].style.display = "block";
+    //   }
+    // };
+    // const classhide = function(){
+    //   const lists = document.getElementsByClassName('list');
+    //   for (let i = 0; i < lists.length; i++) {
+    //     lists[i].style.display = "none";
+    //   }
+    // };
+
+    // セレクター式で要素を取得
+    // const lists = document.querySelectorAll('.list');
+    // console.log(lists);
+
+    const lists = document.querySelector('.list');
+    console.log(lists);
+    </script>
+  </body>
+</html>
